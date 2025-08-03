@@ -232,5 +232,8 @@ async def analyze_images(files: List[UploadFile] = File(...)):
                 os.remove(temp_file)
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+    import os
+    port = int(os.environ.get("PORT", 8000))  # fallback to 8000 for local use
+    uvicorn.run(app, host="0.0.0.0", port=port)
+
 
