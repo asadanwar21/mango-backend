@@ -1,8 +1,8 @@
-fastapi==0.110.0
-uvicorn[standard]==0.29.0
-numpy==1.26.4
-opencv-python==4.9.0.80
-ultralytics==8.2.16
-tensorflow==2.15.0
-joblib==1.4.2
-python-multipart==0.0.9
+fastapi
+uvicorn
+numpy
+opencv-python
+ultralytics
+joblib
+python-multipart
+tensorflow==2.20.0rc0
